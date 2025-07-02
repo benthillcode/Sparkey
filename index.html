@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Ignite - Lighter Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Ignite</h1>
+    <button id="generateBtn" type="button">Generate Colors</button>
+    <div class="lighter-preview">
+      <svg id="lighterSVG" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Body -->
+        <rect id="body" x="20" y="30" width="60" height="140" rx="15" ry="15" fill="#cccccc"/>
+        <!-- Flat Touch Button -->
+        <rect id="button" x="68" y="28" width="12" height="8" rx="2" ry="2" fill="#999999"/>
+        <!-- Flame -->
+        <path id="flame" d="M50 30 C47 15, 53 15, 50 30 Z" fill="#FF6600"/>
+      </svg>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
