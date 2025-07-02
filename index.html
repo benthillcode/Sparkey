@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Ignite v2 Secure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Ignite v2</h1>
+    <div>
+      <input type="text" id="promptInput" placeholder="e.g. desert vibe" />
+      <button id="promptBtn" type="button">Generate from Prompt</button>
+      <button id="randomBtn" type="button">Random Palette</button>
+    </div>
+    <button id="saveBtn" type="button">Save Design</button>
+    <div class="lighter-preview">
+      <svg id="lighterSVG" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+        <rect id="body" x="20" y="30" width="60" height="140" rx="15" ry="15" fill="#cccccc"/>
+        <rect id="button" x="68" y="28" width="12" height="8" rx="2" ry="2" fill="#999999"/>
+        <path id="flame" d="M50 30 C47 15, 53 15, 50 30 Z" fill="#FF6600"/>
+      </svg>
+    </div>
+    <h2>Saved Designs</h2>
+    <ul id="savedList"></ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
